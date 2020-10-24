@@ -4,15 +4,27 @@ html { box-sizing: border-box; }
 
 
 /* -------------------------------------------------- */
-
+.doporucujeme {
+    display: flex;
+    flex-direction: column;
+}
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-}
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    max-width: 479px; /*toto pak smaz*/
 
+}
 h2 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.recept-nazev1 {
+    font-size: 1.75rem;
 }
 
 .paticka {
@@ -40,3 +52,67 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.hlavni-recept {
+    background-image: url(images/burger.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.recept-meta {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.recept-komentare, .recept-kategorie {
+    flex: 1;
+}
+.recept-komentare {
+    justify-content: flex-end;
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+.recept-nazev1 {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.recept {
+    display: flex;
+    flex-direction: column;
+}
+.recept-nazev {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.recept2 {
+    background-image: url(images/sushi.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90px;
+}
+.recept3 {
+    background-image: url(images/rajcata.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90px;
+}
+.recept4 {
+    background-image: url(images/kure.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90px;
+}
+.recept5 {
+    background-image: url(images/grilovani.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90px;
+}
+.recept-kategorie {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
