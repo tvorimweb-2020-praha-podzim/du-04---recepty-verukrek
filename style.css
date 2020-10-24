@@ -14,8 +14,6 @@ body {
     font-size: 0.8rem;
     font-weight: 400;
     color: white;
-    max-width: 479px; /*toto pak smaz*/
-
 }
 h2 {
     margin: 0;
@@ -114,5 +112,50 @@ notebook/pc:
 .recept-kategorie {
     padding-left: 0.5rem;
     padding-top: 0.5rem;
+}
+/*Tablet*/
+
+@media (min-width: 480px) {
+    .recept-nazev1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .hlavni-recept {
+        min-height: 250px;
+    }
+    .recept2, 
+    .recept3,
+    .recept4,
+    .recept5 {
+        min-height: 150px; 
+    }
+    .recept-komentare {
+        padding-top: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .recept-nazev1 {
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .recept-nazev {
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .recept-kategorie {
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .doporucujeme {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .hlavni-recept {
+        flex-basis: 100%;
+    }
+    .sloupec {
+        flex: 1;
+    }
 }
 
