@@ -7,6 +7,7 @@ html { box-sizing: border-box; }
 .doporucujeme {
     display: flex;
     flex-direction: column;
+    text-shadow: black 1px 0.5px;
 }
 body {
     margin: 0;
@@ -21,7 +22,7 @@ h2 {
     font-weight: 800;
     font-size: 1.2rem;
 }
-.recept-nazev1 {
+.recept-nazev-hlavni {
     font-size: 1.75rem;
 }
 
@@ -46,6 +47,7 @@ h2 {
     min-height: 200px;
     display: flex;
     flex-direction: column;
+    margin-bottom:0.1rem;
 }
 .recept-meta {
     display: flex;
@@ -61,13 +63,17 @@ h2 {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
 }
-.recept-nazev1 {
+.recept-nazev-hlavni {
     padding-left: 0.5rem;
     padding-bottom: 0.5rem;
 }
 .recept {
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    min-height: 90px;
+    margin-bottom: 0.1rem;
 }
 .recept-nazev {
     padding-left: 0.5rem;
@@ -75,27 +81,17 @@ h2 {
 }
 .recept2 {
     background-image: url(images/sushi.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 90px;
+    margin-right: 0.1rem;
 }
 .recept3 {
     background-image: url(images/rajcata.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 90px;
+    margin-right: 00.1rem;
 }
 .recept4 {
     background-image: url(images/kure.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 90px;
 }
 .recept5 {
     background-image: url(images/grilovani.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 90px;
 }
 .recept-kategorie {
     padding-left: 0.5rem;
@@ -105,7 +101,7 @@ h2 {
 /*Tablet*/
 
 @media (min-width: 480px) {
-    .recept-nazev1 {
+    .recept-nazev-hlavni {
         font-size: 2rem;
     }
     h2 {
@@ -113,28 +109,11 @@ h2 {
     }
     .hlavni-recept {
         min-height: 250px;
+        padding: 1.25rem;
     }
-    .recept2, 
-    .recept3,
-    .recept4,
-    .recept5 {
+    .recept {
         min-height: 150px; 
-    }
-    .recept-komentare {
-        padding-top: 1.25rem;
-        padding-right: 1.25rem;
-    }
-    .recept-nazev1 {
-        padding-left: 1.25rem;
-        padding-bottom: 1.25rem;
-    }
-    .recept-nazev {
-        padding-left: 1.25rem;
-        padding-bottom: 1.25rem;
-    }
-    .recept-kategorie {
-        padding-left: 1.25rem;
-        padding-top: 1.25rem;
+        padding: 1.25rem;
     }
     .doporucujeme {
         flex-direction: row;
@@ -151,7 +130,7 @@ h2 {
 /*PC/ntb*/
 
 @media (min-width: 860px) {
-    .recept-nazev1 {
+    .recept-nazev-hlavni {
         font-size: 3rem;
     }
     h2 {
@@ -160,16 +139,13 @@ h2 {
     .hlavni-recept {
         min-height: 400px;
         flex: 1;
+        margin-right: 00.1rem;
     }
-    .recept2, 
-    .recept3,
-    .recept4,
-    .recept5 {
+    .recept {
         min-height: 200px; 
     }
     .doporucujeme {
         flex-direction: row;
     }
-
 }
 
